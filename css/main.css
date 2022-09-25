@@ -1,0 +1,486 @@
+body div main .beers-menu .beers__content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 100%; }
+
+body div main .beers-menu .beers-tittle {
+  display: flex;
+  justify-content: center; }
+  body div main .beers-menu .beers-tittle h1 {
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 40px; }
+  body div main .beers-menu .beers-tittle h2 {
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 40px; }
+
+/* Estructura del index*/
+/* Propiedades del main*/
+body {
+  font-family: 'Roboto', sans-serif; }
+  body .container-1 {
+    display: grid;
+    grid-template-areas: "menu menu menu menu" "banner banner banner banner" "main main main main" "footer footer footer footer";
+    width: 100%; }
+    body .container-1 section {
+      grid-area: banner;
+      margin: 0.8rem;
+      border: 2px solid black;
+      width: 97%; }
+      body .container-1 section .banner__img {
+        width: 100%;
+        height: 100%; }
+    body .container-1 .main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr;
+      row-gap: 20px;
+      /* segunda parte del main*/ }
+      body .container-1 .main .section {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 0.5rem;
+        column-gap: 15px; }
+        body .container-1 .main .section .section__text {
+          text-align: center; }
+          body .container-1 .main .section .section__text h1 {
+            margin-bottom: 1rem;
+            border: 2px solid black;
+            text-transform: uppercase;
+            background-color: #ffffc4;
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+            font-size: 40px; }
+          body .container-1 .main .section .section__text p {
+            font-size: 27px;
+            margin: 1.5rem 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold; }
+        body .container-1 .main .section .section__items .section__img {
+          border: 2px solid black;
+          flex-direction: row;
+          margin-right: 1rem; }
+      body .container-1 .main .merchandise {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top: 10px;
+        gap: 10px;
+        text-align: center; }
+        body .container-1 .main .merchandise .merchandise__img {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly; }
+          body .container-1 .main .merchandise .merchandise__img img {
+            border: 2px solid black; }
+          body .container-1 .main .merchandise .merchandise__img button {
+            width: 100px;
+            font-family: 'Roboto', sans-serif; }
+        body .container-1 .main .merchandise .merchandise__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center; }
+          body .container-1 .main .merchandise .merchandise__text h2 {
+            display: inline-block;
+            border: 2px solid black;
+            text-transform: uppercase;
+            background-color: #ffffc4;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif; }
+          body .container-1 .main .merchandise .merchandise__text p {
+            font-size: 27px;
+            font-weight: bold;
+            margin: 1.5rem 1rem;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif; }
+    body .container-1 footer {
+      grid-area: footer; }
+      body .container-1 footer .footer {
+        display: flex;
+        justify-content: space-between; }
+        body .container-1 footer .footer .card {
+          display: flex;
+          flex-direction: column; }
+          body .container-1 footer .footer .card .card__tittle {
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold; }
+          body .container-1 footer .footer .card p {
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif; }
+        body .container-1 footer .footer .redes-sociales {
+          margin-right: 30px; }
+          body .container-1 footer .footer .redes-sociales h4 {
+            font-size: 2rem; }
+          body .container-1 footer .footer .redes-sociales .social-icons {
+            display: flex;
+            column-gap: 20px; }
+            body .container-1 footer .footer .redes-sociales .social-icons li {
+              list-style-type: none; }
+
+/*Estructura del body "Beers"*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffc4; }
+  body div {
+    /*propiedades del main*/
+    /*Propiedades del footer*/ }
+    body div header {
+      background-color: rgba(254, 254, 122, 0.893);
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 25% 75%; }
+      body div header div {
+        text-align: center;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      body div header .menu__option {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center; }
+        body div header .menu__option ul {
+          list-style-type: none; }
+          body div header .menu__option ul li {
+            display: inline-block;
+            margin: 1rem 2rem;
+            padding: 5px;
+            font-size: 1.5rem;
+            border: 2px solid black;
+            background-color: rgba(218, 223, 77, 0.915);
+            font-weight: bold; }
+            body div header .menu__option ul li .menu__button {
+              text-decoration: none;
+              color: black;
+              padding: 5px; }
+    body div main .beers-menu {
+      display: grid;
+      margin-top: 1rem;
+      grid-template-columns: 3fr;
+      grid-template-rows: 4fr;
+      row-gap: 1.5rem; }
+      body div main .beers-menu .beers__content .beers__items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        body div main .beers-menu .beers__content .beers__items img {
+          height: 80%;
+          border: 2px solid black; }
+        body div main .beers-menu .beers__content .beers__items p {
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-transform: uppercase; }
+    body div footer .footer {
+      background-color: rgba(254, 254, 122, 0.893);
+      grid-area: footer;
+      font-family: 'Roboto', sans-serif;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      body div footer .footer .card {
+        display: flex;
+        flex-direction: column; }
+        body div footer .footer .card .card__tittle {
+          font-size: 2rem;
+          font-family: 'Roboto', sans-serif; }
+        body div footer .footer .card p {
+          font-size: 1.5rem;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold; }
+      body div footer .footer .redes-sociales {
+        margin-right: 30px; }
+        body div footer .footer .redes-sociales h4 {
+          font-size: 2rem; }
+        body div footer .footer .redes-sociales .social-icons {
+          display: flex;
+          column-gap: 20px; }
+          body div footer .footer .redes-sociales .social-icons li {
+            list-style-type: none; }
+
+/*media queries del index */
+@media screen and (min-width: 1020px) and (max-width: 1310px) {
+  body .main {
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 2fr; }
+    body .main .section {
+      column-gap: 10px; }
+      body .main .section .section__text h1 {
+        font-size: 27px; }
+      body .main .section .section__text p {
+        font-size: 20px; }
+      body .main .section .section__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .main .section .section__items .section__img {
+          width: 500px;
+          height: 410px; }
+    body .main .merchandise .merchandise__text p {
+      font-size: 20px; } }
+
+@media screen and (min-width: 820px) and (max-width: 1019px) {
+  body div header {
+    grid-template-rows: 20% 80%; }
+    body div header div {
+      height: 50px; }
+    body div header .menu__option ul {
+      display: flex;
+      justify-content: space-around;
+      column-gap: 25px; }
+      body div header .menu__option ul li {
+        margin: 0;
+        padding: 0; }
+  body div .main .section .section__text .section__tittle {
+    font-size: 26px; }
+  body div .main .section .section__text .section__parraph {
+    font-size: 19px; }
+  body div .main .section .section__items .section__img {
+    width: 400px;
+    height: 310px; }
+  body div .main .merchandise .merchandise__text .merchandise__tittle {
+    font-size: 26px;
+    margin: 10px; }
+  body div .main .merchandise .merchandise__text .merchandise__parraph {
+    font-size: 19px;
+    margin-top: 0px; }
+  body div .main .merchandise .merchandise__text .merchandise__button-4 {
+    display: none; }
+  body div .main .merchandise .merchandise__img .merchandise__img-1 {
+    display: none; }
+  body div .main .merchandise .merchandise__img .merchandise__button-1 {
+    display: none; }
+  body div .main .merchandise .merchandise__img .merchandise__img-2 {
+    width: 180px;
+    height: 150px; }
+  body div .main .merchandise .merchandise__img .merchandise__img-3 {
+    width: 180px;
+    height: 150px; } }
+
+@media screen and (min-width: 730px) and (max-width: 819px) {
+  body div header {
+    grid-template-rows: 20% 80%; }
+    body div header div {
+      height: 40px; }
+    body div header .menu__option ul {
+      display: flex;
+      justify-content: space-around;
+      column-gap: 25px; }
+      body div header .menu__option ul li {
+        margin: 0;
+        padding: 0; }
+  body div .main .section .section__text .section__tittle {
+    font-size: 21px; }
+  body div .main .section .section__text .section__parraph {
+    font-size: 15px; }
+  body div .main .section .section__items .section__img {
+    width: 350px;
+    height: 260px; }
+  body div .main .merchandise .merchandise__text .merchandise__tittle {
+    font-size: 21px;
+    margin: 10px; }
+  body div .main .merchandise .merchandise__text .merchandise__parraph {
+    font-size: 15px;
+    margin-top: 0px; }
+  body div .main .merchandise .merchandise__text .merchandise__button-4 {
+    display: none; }
+  body div .main .merchandise .merchandise__img .merchandise__img-1 {
+    display: none; }
+  body div .main .merchandise .merchandise__img .merchandise__button-1 {
+    display: none; }
+  body div .main .merchandise .merchandise__img .merchandise__img-2 {
+    width: 160px;
+    height: 130px; }
+  body div .main .merchandise .merchandise__img .merchandise__img-3 {
+    width: 160px;
+    height: 130px; } }
+
+@media screen and (min-width: 600px) and (max-width: 729px) {
+  body .container-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr; }
+    body .container-1 header {
+      grid-template-rows: 20% 80%; }
+      body .container-1 header div {
+        height: 40px; }
+      body .container-1 header .menu__option {
+        margin-top: 10px; }
+        body .container-1 header .menu__option ul {
+          display: flex;
+          justify-content: space-around;
+          column-gap: 40px; }
+          body .container-1 header .menu__option ul li {
+            margin: 0;
+            padding: 0; }
+    body .container-1 .main .section {
+      flex-flow: column nowrap; }
+      body .container-1 .main .section .section__text .section__parraph {
+        font-size: 27px; }
+      body .container-1 .main .section .section__text .section__button {
+        display: none; }
+      body .container-1 .main .section .section__items {
+        display: flex;
+        justify-content: center; }
+        body .container-1 .main .section .section__items .section__img {
+          width: 700px;
+          height: 420px; }
+    body .container-1 .main .merchandise {
+      flex-flow: column-reverse nowrap; }
+      body .container-1 .main .merchandise .merchandise__text .merchandise__tittle {
+        font-size: 40px;
+        margin: 10px; }
+      body .container-1 .main .merchandise .merchandise__text .merchandise__parraph {
+        font-size: 27px;
+        margin-top: 0px; }
+      body .container-1 .main .merchandise .merchandise__text .merchandise__button-4 {
+        display: none; }
+      body .container-1 .main .merchandise .merchandise__img {
+        row-gap: 10px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__img-1 {
+          width: 500px;
+          height: 420px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__img-2 {
+          width: 500px;
+          height: 420px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__img-3 {
+          width: 500px;
+          height: 420px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__button-1 {
+          width: 130px;
+          height: 65px;
+          font-size: 23px;
+          font-weight: bold; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__button-2 {
+          width: 130px;
+          height: 65px;
+          font-size: 23px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__button-3 {
+          width: 130px;
+          height: 65px;
+          font-size: 23px; }
+  /*media queries de pages*/
+  body .beers header {
+    grid-template-rows: 20% 80%; }
+    body .beers header div {
+      height: 40px; }
+    body .beers header .menu__option {
+      margin-top: 10px; }
+      body .beers header .menu__option ul {
+        display: flex;
+        justify-content: space-around;
+        column-gap: 40px; }
+        body .beers header .menu__option ul li {
+          font-size: 18px;
+          margin: 0;
+          padding: 0; }
+  body .beers main .beers-menu {
+    grid-template-columns: 1fr; }
+    body .beers main .beers-menu .beers__content {
+      flex-direction: column;
+      row-gap: 1rem; }
+      body .beers main .beers-menu .beers__content .beers__items .items__img {
+        width: 350px;
+        height: 350px; } }
+
+/*media queries mobile*/
+@media screen and (min-width: 380px) and (max-width: 599px) {
+  body .container-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr; }
+    body .container-1 header {
+      grid-template-rows: 20% 80%; }
+      body .container-1 header div {
+        height: 40px; }
+      body .container-1 header .menu__option {
+        margin-top: 10px; }
+        body .container-1 header .menu__option ul {
+          display: flex;
+          justify-content: space-around;
+          column-gap: 40px; }
+          body .container-1 header .menu__option ul li {
+            margin: 0;
+            padding: 0; }
+    body .container-1 .main .section {
+      flex-flow: column nowrap; }
+      body .container-1 .main .section .section__text .section__parraph {
+        font-size: 27px; }
+      body .container-1 .main .section .section__text .section__button {
+        display: none; }
+      body .container-1 .main .section .section__items {
+        display: flex;
+        justify-content: center; }
+        body .container-1 .main .section .section__items .section__img {
+          width: 700px;
+          height: 420px; }
+    body .container-1 .main .merchandise {
+      flex-flow: column-reverse nowrap; }
+      body .container-1 .main .merchandise .merchandise__text .merchandise__tittle {
+        font-size: 40px;
+        margin: 10px; }
+      body .container-1 .main .merchandise .merchandise__text .merchandise__parraph {
+        font-size: 27px;
+        margin-top: 0px; }
+      body .container-1 .main .merchandise .merchandise__text .merchandise__button-4 {
+        display: none; }
+      body .container-1 .main .merchandise .merchandise__img {
+        row-gap: 10px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__img-1 {
+          width: 500px;
+          height: 420px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__img-2 {
+          width: 500px;
+          height: 420px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__img-3 {
+          width: 500px;
+          height: 420px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__button-1 {
+          width: 130px;
+          height: 65px;
+          font-size: 23px;
+          font-weight: bold; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__button-2 {
+          width: 130px;
+          height: 65px;
+          font-size: 23px; }
+        body .container-1 .main .merchandise .merchandise__img .merchandise__button-3 {
+          width: 130px;
+          height: 65px;
+          font-size: 23px; }
+  /*media queries de pages*/
+  body .beers header {
+    grid-template-rows: 20% 80%; }
+    body .beers header div {
+      height: 40px; }
+    body .beers header .menu__option .menu__logo {
+      width: 90px;
+      height: 90px; }
+    body .beers header .menu__option ul {
+      display: flex;
+      justify-content: space-around;
+      column-gap: 15px; }
+      body .beers header .menu__option ul li {
+        margin: 0;
+        padding: 0;
+        font-size: 13px; }
+  body .beers main .beers-menu {
+    grid-template-columns: 1fr; }
+    body .beers main .beers-menu .beers__content {
+      flex-direction: column;
+      row-gap: 1rem; }
+      body .beers main .beers-menu .beers__content .beers__items .items__img {
+        width: 350px;
+        height: 350px; } }
